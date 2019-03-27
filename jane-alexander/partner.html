@@ -28,6 +28,29 @@
      .horizontal-mailchimp .mc-field-group {
           margin-bottom: 12px;
      }
+	
+	fieldset {
+  overflow: hidden
+}
+
+.some-class {
+  float: left;
+  clear: none;
+}
+
+label.some-class {
+  float: left;
+  clear: none;
+  display: block;
+  padding: 2px 1em 0 0;
+}
+
+input[type=radio],
+input.radio {
+  float: left;
+  clear: none;
+  margin: 2px 0 0 2px;
+}
 		
        </style>
     <title>Born Perfect NC</title>
@@ -100,10 +123,15 @@
 <div class="mc-field-group text-white input-group inline-block">
 	<div class="flex mb-4">
   <div class="w-1/3 text-yellow-darker h-12"> <strong>I Want to Sign On As An: </strong></div>
-  <div class="w-1/3 h-12 text-center items-center content-center"> <input type="radio" value="Organization, Business, or Congregation" name="MMERGE6" id="mce-MMERGE6-0"><br /><label for="mce-MMERGE6-0">Organization, Business, or Congregation</label>
-</div>
-  <div class="w-1/3 h-12 text-center items-center content-center"><input type="radio" value="Individual Endorser" name="MMERGE6" id="mce-MMERGE6-1"><label for="mce-MMERGE6-1">Individual Endorser</label>
-</div>
+  <div class="w-2/3 h-12"> 
+	  <fieldset>
+  <div class="some-class">
+    <input type="radio" class="radio" name="MMERGE6" value="Organization, Business, or Congregation" id="mce-MMERGE6-0" />
+    <label for="mce-MMERGE6-0">Organization, Business, or Congregation</label>
+    <input type="radio" class="radio" value="Individual Endorser" name="MMERGE6" id="mce-MMERGE6-1"/>
+    <label for="mce-MMERGE6-1">Individual Endorser</label>
+  </div>
+</fieldset>
 </div>
    </div>
 <div class="mc-field-group">
